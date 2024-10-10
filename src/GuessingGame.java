@@ -5,16 +5,18 @@ public class GuessingGame {
 
     Scanner scanner = new Scanner (System.in);
     
+    // Added Strings and int 
     String correctName = "Emma";
     String guesses = "";
     int guessesCount = 0;
 
-
+        // System print & add scanner
     do {
         System.out.println("Guess my name (type stop to exit)");
         guesses = scanner.nextLine();
         
 
+        // Stop and correct name condition added
         if (guesses.equalsIgnoreCase("Stop")) {
             break;
         }
@@ -25,6 +27,7 @@ public class GuessingGame {
             break;
         }
         }
+        // Final entry count added
         while (true);
         System.out.println("You guessed " + guessesCount + " times.");
 
