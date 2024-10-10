@@ -8,8 +8,17 @@ public class GuessingGame {
     String correctName = "Emma";
     String guesses = "";
 
+
         System.out.println("Guess my name (type stop to exit)");
         guesses = scanner.nextLine();
+
+
+        if (guesses.equalsIgnoreCase("Stop")) {
+        }
+
+        if (guesses.equalsIgnoreCase("Emma")) {
+        System.out.println("Congratulations!");
+    }
 
     }
 }
